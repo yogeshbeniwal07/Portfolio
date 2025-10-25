@@ -1,5 +1,3 @@
-import e from "express";
-
 export interface WorkCarkProps{
     imageUrl: string;
     title: string;
