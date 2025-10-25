@@ -1,13 +1,14 @@
 "use client"
 import React from 'react'
+import { SwitcherProps } from '../utils/types'
 
-export const Switcher13 = ({checked, onChange}:any) => {
+export const Switcher13 = ({checked = false, onChange}: SwitcherProps) => {
   return (
       <label className='themeSwitcherThree relative inline-flex cursor-pointer select-none items-center'>
         <input
           type='checkbox'
           checked={checked}
-          onChange={onChange}
+          onChange={(e) => onChange && onChange(e)}
           className='sr-only'
         />
 

@@ -12,3 +12,8 @@ export interface WorkCarkProps{
 export interface SkillProps{
     skills: string[];
 }
+
+export interface SwitcherProps {
+    checked: boolean;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
